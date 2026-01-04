@@ -1,27 +1,29 @@
-███████╗██╗  ██╗██╗   ██╗██████╗ ██╗  ██╗ █████╗ ███╗   ███╗ ██████╗ ███████╗
-██╔════╝██║  ██║██║   ██║██╔══██╗██║  ██║██╔══██╗████╗ ████║██╔═══██╗██╔════╝
-███████╗███████║██║   ██║██████╔╝███████║███████║██╔████╔██║██║   ██║███████╗
-╚════██║██╔══██║██║   ██║██╔══██╗██╔══██║██╔══██║██║╚██╔╝██║██║   ██║╚════██║
-███████║██║  ██║╚██████╔╝██████╔╝██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝███████║
-╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚══════╝
-
-        S E C U R E   •   E P H E M E R A L   •   Z E R O - T R U S T
-````
+<!-- ========================= -->
+<!--  SHUBHAMOS SECURE CRYPT   -->
+<!-- ========================= -->
 
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/02d02233-5c18-47cf-ad6d-92e1cde6d7ae"
-         autoplay
-         loop
-         muted
-         playsinline
-         width="80%">
+  <b>Ephemeral • Private • Zero-Trust Encryption</b><br>
+  <i>Encrypt → Exchange → Erase</i>
+</p>
+
+---
+
+<p align="center">
+  <video
+    src="https://github.com/user-attachments/assets/9d22cdac-cf08-457a-bac8-020abbf67092"
+    autoplay
+    loop
+    muted
+    playsinline
+    width="900">
   </video>
 </p>
 
 ---
 
 <p align="center">
-  🔗 <b>Live Test URL</b><br>
+  🔗 <b>Live Test Deployment</b><br>
   <a href="https://encryption-3qxz.onrender.com">
     https://encryption-3qxz.onrender.com
   </a>
@@ -29,121 +31,199 @@
 
 ---
 
-## 🛡️ Threat Model (Explicit & Honest)
-
-### ✅ Defended Against
-- Unauthorized access
-- Key reuse attacks
-- Server-side data harvesting
-- Replay attacks
-- Partial download abuse
-- Expired data resurrection
-
-### ❌ NOT Defended Against
-- User losing the key
-- Screen recording / screenshots
-- Compromised client devices
-- Malware on user system
-- Physical access to unlocked sessions
-
-> **This system protects data in transit & lifecycle — not user mistakes.**
+<p align="center">
+  <img src="https://img.shields.io/badge/Privacy-First-black?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Ephemeral-Data-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Zero-Trust-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Open-Experimentation-purple?style=for-the-badge">
+</p>
 
 ---
 
-## 🔑 Cryptographic Primitives (Transparency Section)
+## 🔐 What Is This?
 
-> *(Adjust names if you want — this structure is what matters)*
+**SHUBHAMOS Secure Crypt** is a privacy-focused encryption service built for  
+**temporary, one-time, irreversible data exchange**.
 
-- **Encryption Algorithm:** Mars Technology
-- **Key Generation:** Cryptographically secure random bytes
-- **Key Scope:** One-time use only
-- **Key Storage:** Never persisted
-- **IV / Nonce:** Unique per encryption
-- **Integrity:** Enforced (tamper = destroy)
-- **Password Derivation:** ❌ Not used
-- **Key Recovery:** ❌ Impossible by design
+It allows users to encrypt **images and text**, retrieve them securely, and ensures
+that **all data self-destructs** after use or expiry.
 
-> No master keys.  
-> No backdoors.  
-> No server-side decryption.
+No persistence.  
+No recovery.  
+No silent storage.
 
 ---
 
-## 🏗️ High-Level Architecture
+## 🧠 Design Philosophy
+
+> **If data must exist, it should exist briefly.**
+
+This system follows a **zero-trust mindset**:
+
+- Each request is isolated
+- Each key is unique
+- Each file has a defined lifespan
+- Any failure results in destruction, not exposure
+
+---
+
+## ✨ Core Features
+
+### 🔑 One-Time Encryption
+- Unique key per request
+- Keys cannot be reused
+- No regeneration possible
+
+### ⏳ Automatic Destruction
+- Time-based expiry
+- Instant deletion after download
+- Continuous cleanup process
+
+### 🚦 Request Queue Control
+- Prevents abuse and overload
+- Fair request handling
+- Live position tracking
+
+### 🧾 Session-Scoped History
+- Temporary session visibility
+- Expired entries vanish automatically
+- No permanent tracking
+
+### 🔒 Failure-Safe Handling
+- Invalid keys return nothing
+- Corrupted payloads are rejected
+- Partial downloads are destroyed
+
+---
+
+## 🖼️ Image Encryption Flow
 
 ```
 
-┌────────────┐
-│   Client   │
-└─────┬──────┘
-│ Encrypt Request
+┌──────────┐
+│  Image   │
+└────┬─────┘
 ▼
-┌────────────┐
-│  API Layer │
-└─────┬──────┘
-│ One-Time Key
+┌──────────┐
+│ Encrypt  │
+└────┬─────┘
 ▼
-┌─────────────────┐
-│ Encryption Core │
-└─────┬───────────┘
-│ Encrypted Artifact
+┌──────────────┐
+│ Encrypted Bin│
+└────┬─────────┘
 ▼
-┌─────────────────┐
-│ Ephemeral Store │  ← TTL enforced
-└─────┬───────────┘
-│ Download / Expiry
+┌──────────────┐
+│ One-Time Key │
+└────┬─────────┘
 ▼
-┌─────────────────┐
-│ Secure Destroy  │  ← Zero recovery
-└─────────────────┘
+┌──────────────┐
+│ Auto Destroy │
+└──────────────┘
 
 ```
 
+⚠️ **Losing the key permanently destroys the data**
+
 ---
 
-## 🧨 Data Lifecycle (Zero-Trust Flow)
+## ✉️ Text Encryption Flow
 
 ```
 
-Create → Encrypt → Store (TTL) → Access Once → Destroy
-↓
-Expire Timer
-↓
-Destroy
+Text → Encrypt → Payload + Key → Decrypt → Auto Expire
 
 ```
 
-**There is no state where plaintext is stored. Ever.**
+- No storage
+- No logging
+- No recovery path
 
 ---
 
-## ⚙️ Deployment Notes (Minimal & Honest)
+## 🔐 Security Model Overview
 
-- Stateless backend
-- Ephemeral storage only
-- No persistent volumes
-- No database dependency for secrets
+- Isolated encryption per request
+- Short-lived encrypted artifacts
+- No shared secrets
+- No server-side recovery
 
-> Restarting the server = destroys active data  
-> This is a feature, not a bug.
-
----
-
-## 🧪 Security Posture Summary
-
-| Area | Status |
-|----|----|
-| Confidentiality | ✅ Strong |
-| Integrity | ✅ Enforced |
-| Availability | ⚠️ Best-effort |
-| Recoverability | ❌ None |
-| Persistence | ❌ Zero |
-| Forgiveness | ❌ Zero |
+> **Security failures destroy data instead of exposing it.**
 
 ---
 
-## 🧠 Design Principle (Final Nail)
+## 🧪 Ideal Use Cases
 
-> **A secure system should fail closed — not leak open.**
+- Secure image sharing
+- Ephemeral communication
+- Temporary secret exchange
+- Privacy-focused workflows
+- Security demonstrations
+- Encryption proof-of-concepts
 
-This project **destroys data instead of risking exposure**.
+---
+
+## ⚠️ Critical Warnings
+
+🚨 **THIS SYSTEM IS INTENTIONALLY UNFORGIVING**
+
+- Keys are **not recoverable**
+- Expired data is **permanently deleted**
+- No admin override
+- No backups
+- No undo
+
+**This is not cloud storage.  
+This is controlled data loss.**
+
+---
+
+## 🕶️ Dark-Mode Optimized
+
+Designed to feel native in:
+- Dark terminals
+- Cyber-style dashboards
+- Minimal security panels
+- Hacker-inspired interfaces
+
+---
+
+## 📜 Disclaimer
+
+This project is provided for **educational and experimental use**.
+
+Do **not**:
+- Use it for long-term storage
+- Treat it as a backup solution
+- Assume recovery is possible
+
+The author is **not responsible** for data loss caused by:
+- Lost keys
+- Expired files
+- User mistakes
+- Intentional destruction mechanisms
+
+---
+
+## 🧑‍💻 Author
+
+**Shubham**  
+Project Identity: **SHUBHAMOS**
+
+---
+
+## ⭐ Support
+
+If this project made you rethink privacy:
+
+- ⭐ Star the repository
+- 🧠 Learn from the architecture
+- 🔐 Respect ephemeral security
+- 🚀 Build something better
+
+---
+
+<p align="center">
+  <b>Encrypt. Exchange. Erase.</b><br>
+  <i>Nothing lasts. That’s the point.</i>
+</p>
+```
