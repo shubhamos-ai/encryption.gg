@@ -24,8 +24,8 @@
 
 <p align="center">
   🔗 <b>Live Test Deployment</b><br>
-  <a href="https://encryption-3qxz.onrender.com">
-    https://encryption-3qxz.onrender.com
+  <a href="https://encryption.shubhamos.com">
+    https://encryption.shubhamos.com
   </a>
 </p>
 
