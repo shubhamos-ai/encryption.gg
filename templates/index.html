@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevilSMP Bot Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <style>
+        .server-card {
+            transition: all 0.3s ease;
+        }
+        .server-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .avatar-img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .server-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="/">DevilSMP Bot Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Servers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h2>Welcome, DEVILKINGS_07!</h2>
+                <p class="text-muted">Manage your Discord servers and moderate users from this dashboard.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            {% for server in servers %}
+            <div class="col-md-4 mb-4">
+                <div class="card server-card">
+                    <div class="card-body text-center">
+                        {% if server.icon_url %}
+                        <img src="{{ server.icon_url }}" alt="{{ server.name }}" class="server-icon">
+                        {% else %}
+                        <div class="server-icon bg-secondary d-flex align-items-center justify-content-center">
+                            <span class="fs-1">{{ server.name[:1] }}</span>
+                        </div>
+                        {% endif %}
+                        <h5 class="card-title">{{ server.name }}</h5>
+                        <p class="card-text text-muted">{{ server.member_count }} Members</p>
+                        <a href="/server/{{ server.id }}" class="btn btn-primary">View Server</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+            {% if not servers %}
+            <div class="col-12 text-center py-5">
+                <div class="alert alert-secondary">
+                    <h5>No servers available</h5>
+                    <p class="mb-0">Your bot isn't in any servers yet or is still loading the data.</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
