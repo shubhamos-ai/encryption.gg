@@ -1,0 +1,375 @@
+/**
+ * Discord Bot Implementation
+ * Handles connection to Discord and monitors voice channel status
+ */
+
+const { Client, GatewayIntentBits, Events } = require('discord.js');
+const { 
+    updatePlayerVoiceStatus, 
+    readPlayerData, 
+    updatePlayerVoiceChannel,
+    VOICE_CHANNEL_IDS
+} = require('./mongodb-manager');
+const fs = require('fs').promises;
+const path = require('path');
+
+// Target guild and allowed voice channels
+const TARGET_GUILD_ID = '784763845763006474';
+const ALLOWED_VOICE_CHANNELS = VOICE_CHANNEL_IDS;
+
+// File paths
+const DATA_FOLDER = path.join(process.cwd(), 'data');
+const PLAYERS_FILE = path.join(DATA_FOLDER, 'players.txt');
+const COMMANDS_FILE = path.join(DATA_FOLDER, 'commands.txt');
+
+// Cache of player voice statuses
+const voiceStatusCache = new Map();
+
+/**
+ * Starts the Discord bot and connects to Discord API
+ * @param {string} token - The Discord bot token
+ * @returns {Object} - The Discord bot instance
+ */
+function startDiscordBot(token) {
+    // Create Discord client with necessary intents
+    const client = new Client({
+        intents: [
+            GatewayIntentBits.Guilds,
+            GatewayIntentBits.GuildMembers,
+            GatewayIntentBits.GuildVoiceStates
+        ]
+    });
+
+    // Handle Discord client errors
+    client.on('error', (err) => {
+        console.error('[Discord] Error:', err);
+    });
+
+    // Log when connected and check for target guild
+    client.once(Events.ClientReady, async () => {
+        console.log(`[Discord] Bot logged in as ${client.user.tag}`);
+        
+        // Verify we can see the target guild
+        const guild = client.guilds.cache.get(TARGET_GUILD_ID);
+        if (guild) {
+            console.log(`[Discord] Successfully connected to guild: ${guild.name}`);
+            
+            // Perform an initial scan of all voice channels to update player statuses
+            await scanVoiceChannels(guild);
+        } else {
+            console.error(`[Discord] WARNING: Could not find guild with ID: ${TARGET_GUILD_ID}`);
+        }
+    });
+    
+    /**
+     * Scans all voice channels in the guild to update player statuses
+     * @param {Guild} guild - The Discord guild to scan
+     */
+    async function scanVoiceChannels(guild) {
+        try {
+            console.log('[Discord] Scanning voice channels for players...');
+            
+            // Clear voice status cache before we begin
+            voiceStatusCache.clear();
+            
+            // Try multiple approaches to find voice channel users
+            let playersWithVoice = 0;
+            const processedUsers = new Set();
+            
+            // APPROACH 1: First try using REST API to get current voice states
+            try {
+                // Get all voice states directly from the API (more reliable than cache)
+                console.log('[Discord] Fetching voice states from the API...');
+                try {
+                    const voiceStates = await guild.voiceStates.fetch();
+                    console.log(`[Discord] Found ${voiceStates.size} voice states in total`);
+                    
+                    // Process each voice state but skip any nulls or invalid states
+                    for (const [userId, state] of voiceStates) {
+                        if (!userId || userId === 'null') continue;
+                        if (!state || !state.channelId) continue;
+                        
+                        playersWithVoice++;
+                        processedUsers.add(userId);
+                        
+                        const isAllowedChannel = ALLOWED_VOICE_CHANNELS.includes(state.channelId);
+                        const channelIdToStore = isAllowedChannel ? state.channelId : null;
+                        
+                        // Update cache
+                        voiceStatusCache.set(userId, channelIdToStore);
+                        
+                        // Update player data
+                        await updatePlayerVoiceStatus(userId, channelIdToStore);
+                        
+                        if (isAllowedChannel) {
+                            console.log(`[Discord] API: User ${userId} is in allowed voice channel: ${state.channelId}`);
+                        } else {
+                            console.log(`[Discord] API: User ${userId} is in non-allowed voice channel: ${state.channelId}`);
+                        }
+                    }
+                } catch (err) {
+                console.error('[Discord] Error fetching voice states:', err);
+            }
+            
+            // APPROACH 2: Explicit check for DEVILKINGS_07 who we know is your account
+            try {
+                // Get your Discord ID
+                const yourDiscordId = '635399541742632960';
+                
+                // Force fetch your member object
+                try {
+                    const yourMember = await guild.members.fetch(yourDiscordId);
+                    console.log(`[Discord] Found your member account: ${yourMember.user.username}`);
+                    
+                    // Check if you're in a voice channel
+                    if (yourMember.voice.channelId) {
+                        console.log(`[Discord] Detected your voice channel: ${yourMember.voice.channelId}`);
+                        
+                        // Check if the voice channel is allowed
+                        const isAllowedChannel = ALLOWED_VOICE_CHANNELS.includes(yourMember.voice.channelId);
+                        const channelIdToStore = isAllowedChannel ? yourMember.voice.channelId : null;
+                        
+                        // Update cache
+                        voiceStatusCache.set(yourDiscordId, channelIdToStore);
+                        
+                        // Update player data
+                        await updatePlayerVoiceStatus(yourDiscordId, channelIdToStore);
+                        
+                        if (isAllowedChannel) {
+                            console.log(`[Discord] You are in an allowed voice channel: ${yourMember.voice.channelId}`);
+                        } else {
+                            console.log(`[Discord] You are in a non-allowed voice channel: ${yourMember.voice.channelId}`);
+                        }
+                        
+                        processedUsers.add(yourDiscordId);
+                        playersWithVoice++;
+                    } else {
+                        console.log('[Discord] You are not in a voice channel according to member data');
+                    }
+                } catch (err) {
+                    console.error(`[Discord] Error fetching your member: ${err.message}`);
+                }
+            } catch (err) {
+                console.error('[Discord] Error checking your voice status:', err);
+            }
+            
+            // APPROACH 3: Check each voice channel manually
+            try {
+                // Fetch all voice channels in the guild
+                const voiceChannels = guild.channels.cache.filter(channel => 
+                    channel.type === 2 // GuildVoiceChannel type
+                );
+                
+                // Loop through each voice channel to check members
+                for (const channel of voiceChannels.values()) {
+                    const isAllowedChannel = ALLOWED_VOICE_CHANNELS.includes(channel.id);
+                    console.log(`[Discord] Checking voice channel: ${channel.name} (${channel.id}) - ${isAllowedChannel ? 'Allowed' : 'Not allowed'}`);
+                    
+                    // Force fetch the latest members in this channel
+                    try {
+                        await channel.fetch();
+                        
+                        // Process all members in this voice channel
+                        for (const [memberId, member] of channel.members) {
+                            // Skip already processed users
+                            if (processedUsers.has(memberId)) continue;
+                            
+                            playersWithVoice++;
+                            processedUsers.add(memberId);
+                            
+                            // Only count as in voice if it's an allowed channel
+                            const channelIdToStore = isAllowedChannel ? channel.id : null;
+                            
+                            // Update cache
+                            voiceStatusCache.set(memberId, channelIdToStore);
+                            
+                            // Update player data
+                            await updatePlayerVoiceStatus(memberId, channelIdToStore);
+                            
+                            if (isAllowedChannel) {
+                                console.log(`[Discord] User ${memberId} (${member.user.username}) is in allowed voice channel: ${channel.id}`);
+                            } else {
+                                console.log(`[Discord] User ${memberId} (${member.user.username}) is in non-allowed voice channel: ${channel.id}`);
+                            }
+                        }
+                    } catch (err) {
+                        console.error(`[Discord] Error fetching channel ${channel.id}:`, err);
+                    }
+                }
+            } catch (err) {
+                console.error('[Discord] Error processing voice channels:', err);
+            }
+            
+            // APPROACH 4: Check all guild members for voice state
+            try {
+                const members = await guild.members.fetch();
+                for (const [memberId, member] of members) {
+                    // Skip already processed users
+                    if (processedUsers.has(memberId)) continue;
+                    
+                    // Check if this member has a voice state
+                    if (member.voice && member.voice.channelId) {
+                        playersWithVoice++;
+                        
+                        const isAllowedChannel = ALLOWED_VOICE_CHANNELS.includes(member.voice.channelId);
+                        const channelIdToStore = isAllowedChannel ? member.voice.channelId : null;
+                        
+                        // Update cache
+                        voiceStatusCache.set(memberId, channelIdToStore);
+                        
+                        // Update player data
+                        await updatePlayerVoiceStatus(memberId, channelIdToStore);
+                        
+                        if (isAllowedChannel) {
+                            console.log(`[Discord] Found user ${memberId} (${member.user.username}) in allowed voice channel: ${member.voice.channelId}`);
+                        } else {
+                            console.log(`[Discord] Found user ${memberId} (${member.user.username}) in non-allowed voice channel: ${member.voice.channelId}`);
+                        }
+                    }
+                }
+            } catch (err) {
+                console.error('[Discord] Error checking member voice states:', err);
+            }
+            
+            console.log(`[Discord] Found ${playersWithVoice} players in voice channels`);
+            
+            // Now check registered players against our voice cache to identify players not in voice
+            // First, clear any old data
+            try {
+                // Read the players.txt file directly to get most accurate data
+                const playerFileContent = await fs.readFile(PLAYERS_FILE, 'utf8').catch(() => '');
+                const playerLines = playerFileContent.split('\n').filter(line => line.trim().length > 0);
+                
+                // Process each line and check if player is in voice
+                for (const line of playerLines) {
+                    if (!line.includes(' = ')) continue;
+                    
+                    const parts = line.split(' = ');
+                    if (parts.length < 2) continue;
+                    
+                    const discordId = parts[0];
+                    const minecraftUsername = parts[1];
+                    
+                    // Skip the default entry and the bot itself
+                    if (discordId === '0' || minecraftUsername === 'SHUBHAMOS') continue;
+                    
+                    if (!voiceStatusCache.has(discordId)) {
+                        console.log(`[Discord] Player ${minecraftUsername} (${discordId}) is not in any voice channel`);
+                        await updatePlayerVoiceStatus(discordId, null);
+                    }
+                }
+            } catch (err) {
+                console.error('[Discord] Error processing player data:', err);
+            }
+        } catch (err) {
+            console.error('[Discord] Error scanning voice channels:', err);
+        }
+    }
+    
+    // Check voice channels every 60 seconds to ensure our data stays updated
+    setInterval(() => {
+        try {
+            const guild = client.guilds.cache.get(TARGET_GUILD_ID);
+            if (guild) {
+                scanVoiceChannels(guild);
+            }
+        } catch (err) {
+            console.error('[Discord] Error in scanVoiceChannels interval:', err);
+        }
+    }, 60000); // Every minute
+
+    // Handle voice state updates (join/leave/move between voice channels)
+    client.on(Events.VoiceStateUpdate, async (oldState, newState) => {
+        try {
+            const userId = newState.member.id;
+            const guildId = newState.guild.id;
+            const username = newState.member.user.username;
+            
+            // Only process events from our target guild
+            if (guildId !== TARGET_GUILD_ID) {
+                return;
+            }
+            
+            // Check if the user joined, left, or moved voice channels
+            const oldChannelId = oldState.channelId;
+            const newChannelId = newState.channelId;
+            
+            if (oldChannelId === newChannelId) {
+                // No channel change
+                return;
+            }
+            
+            // Get the minecraft instance for notifications - will be passed from index.js
+            let minecraftBot = global.minecraftBot || null;
+            
+            // Check if the user is in an allowed voice channel
+            const isInAllowedChannel = newChannelId && ALLOWED_VOICE_CHANNELS.includes(newChannelId);
+            
+            // Update cache with channel ID
+            const channelIdToStore = isInAllowedChannel ? newChannelId : null;
+            voiceStatusCache.set(userId, channelIdToStore);
+            
+            // Look up Minecraft username for this Discord user
+            try {
+                const playerData = await readPlayerData();
+                
+                // Find the Minecraft username for this Discord user
+                let minecraftUsername = null;
+                for (const [discordId, data] of Object.entries(playerData)) {
+                    if (discordId === userId) {
+                        minecraftUsername = typeof data === 'object' ? data.minecraftUsername : data;
+                        break;
+                    }
+                }
+                
+                if (minecraftUsername) {
+                    console.log(`[Discord] Found Minecraft username for ${userId}: ${minecraftUsername}`);
+                    
+                    // Update player voice channel with notification support
+                    const result = await updatePlayerVoiceChannel(
+                        userId, 
+                        minecraftUsername, 
+                        channelIdToStore,
+                        minecraftBot
+                    );
+                    
+                    if (result.previousChannel !== result.currentChannel) {
+                        console.log(`[Discord] Updated voice channel for ${minecraftUsername} from ${result.previousChannel || 'none'} to ${result.currentChannel || 'none'}`);
+                    }
+                } else {
+                    // If we couldn't find the Minecraft username, just update the voice status
+                    await updatePlayerVoiceStatus(userId, channelIdToStore);
+                    console.log(`[Discord] Updated voice status for ${username} (${userId}), but couldn't find Minecraft username`);
+                }
+            } catch (err) {
+                console.error(`[Discord] Error looking up Minecraft username for ${userId}:`, err);
+                // Fall back to the old method
+                await updatePlayerVoiceStatus(userId, channelIdToStore);
+            }
+            
+            // Log the activity
+            if (isInAllowedChannel) {
+                console.log(`[Discord] User ${userId} joined allowed voice channel: ${newChannelId}`);
+            } else if (newChannelId) {
+                console.log(`[Discord] User ${userId} is in non-allowed voice channel: ${newChannelId}`);
+            } else {
+                console.log(`[Discord] User ${userId} left voice channels`);
+                voiceStatusCache.delete(userId); // Remove from cache if not in any channel
+            }
+        } catch (err) {
+            console.error('[Discord] Error handling voice state update:', err);
+        }
+    });
+
+    // Log in to Discord
+    client.login(token).catch(err => {
+        console.error('[Discord] Login error:', err);
+        process.exit(1);
+    });
+
+    return client;
+}
+
+module.exports = {
+    startDiscordBot
+};
