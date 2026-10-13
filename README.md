@@ -1,229 +1,106 @@
-<!-- ========================= -->
-<!--  SHUBHAMOS SECURE CRYPT   -->
-<!-- ========================= -->
+# Modular Discord Moderation Bot
 
-<p align="center">
-  <b>Ephemeral • Private • Zero-Trust Encryption</b><br>
-  <i>Encrypt → Exchange → Erase</i>
-</p>
+A modular bot for moderating users on discord! Add custom commands and event handlers to customize the bot to your liking. Reload the bot using the builtin `!reload` or `!reload events` command to see your changes applied LIVE!
 
----
+## A Note Regarding Message Intents
 
-<p align="center">
-  <video
-    src="https://github.com/user-attachments/assets/9d22cdac-cf08-457a-bac8-020abbf67092"
-    autoplay
-    loop
-    muted
-    playsinline
-    width="900">
-  </video>
-</p>
-
----
-
-<p align="center">
-  🔗 <b>Live Test Deployment</b><br>
-  <a href="https://encryption.shubhamos.com">
-    https://encryption.shubhamos.com
-  </a>
-</p>
+This bot will only work for bots that are smaller as it requires the use of message intents, which for larger bots, requires verification from discord.
+This means if your bot will be in more than 100 severs you will not be able to use this method of doing commands and will need to code your own command handlers using the new interactions.
 
----
+See [this FAQ](https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Privileged-Intent-FAQ) from discord regarding these changes.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Privacy-First-black?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Ephemeral-Data-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Zero-Trust-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Open-Experimentation-purple?style=for-the-badge">
-</p>
+There is a vague plan to update to use the new interaction based commands which offers a nicer user experience, but for now it will remain message based until I really get bored and need something to do
 
----
+## Quick Links
 
-## 🔐 What Is This?
+[Adding your own commands](DEVELOPING.md#custom-commands)
 
-**SHUBHAMOS Secure Crypt** is a privacy-focused encryption service built for  
-**temporary, one-time, irreversible data exchange**.
+[Adding your own event handlers](DEVELOPING.md#custom-event-handlers)
 
-It allows users to encrypt **images and text**, retrieve them securely, and ensures
-that **all data self-destructs** after use or expiry.
+[Adding your own persistent storage](DEVELOPING.md#custom-storage-file)
 
-No persistence.  
-No recovery.  
-No silent storage.
+## Installation/Setup
 
----
+### Installing Requirements
 
-## 🧠 Design Philosophy
+- [**Python**](https://www.python.org/downloads/) *Version >=3.8*
+- [**discord.py**](https://pypi.org/project/discord.py/) *Tested on 2.3.2*
+  - Windows install: `python -m pip install discord.py`
+  - Linux install: `pip3 install discord.py`
 
-> **If data must exist, it should exist briefly.**
+### Creating a bot account with Discord
 
-This system follows a **zero-trust mindset**:
+1. Go to the [discord developer portal](https://discord.com/developers/applications) and create a new application
+2. Navigate to the `Bot` section and click `Add a bot`. Fill in the necessary info (like name and an image if you like)
+3. Scroll down to the `Privileged Gateway Intents` section and make sure to select the `SERVER MEMBERS INTENT` and `MESSAGE CONTENT INTENT`. **Click save so it saves your changes!**
+4. Now scroll back up and click the `Reset Token` button, follow the screen prompts until you can copy that token. This is how the program will log in as this bot account. **DO NOT SHARE THIS TOKEN WITH ANYONE!**
+5. Paste the newly copied token into a text file called `token.txt` in the same folder as the `bot.py` file.
 
-- Each request is isolated
-- Each key is unique
-- Each file has a defined lifespan
-- Any failure results in destruction, not exposure
+### Inviting the bot to your server
 
----
+1. On the application page for your bot in the [discord developer portal](https://discord.com/developers/applications), click the `OAuth2` section.
+2. Now click the `URL Generator` section on the sidebar
+3. Select the `bot` scope and then select the `Administrator` permission in the newly displayed Bot Permissions checkbox list
+4. Copy the URL from the bottom and paste it into your browser. Follow the onscreen prompts to invite the bot to your server. You must be an administrator to invite the bot to the server.
 
-## ✨ Core Features
+### Running the bot
 
-### 🔑 One-Time Encryption
-- Unique key per request
-- Keys cannot be reused
-- No regeneration possible
+1. Open a command prompt in the root directory of the bot files (where `bot.py` is) and run the command `python bot.py` to run the bot.
+2. You should see some output on the screen talking about loading commands and logging in as the bot. If that all works, now you can use the bot!
+3. Add any moderator roles you want to the bot using the commands below!
 
-### ⏳ Automatic Destruction
-- Time-based expiry
-- Instant deletion after download
-- Continuous cleanup process
+## Bot Information
 
-### 🚦 Request Queue Control
-- Prevents abuse and overload
-- Fair request handling
-- Live position tracking
+- Default prefix: `!`
+- `<argument>` = **Required argument**
+- `[argument]` = **Optional argument**
+- Durations can either be a formatted time that looks like the following: (`1w2d3h4m5s`) or time in seconds.
+- Durations can also use single types like `2m` or `1w` for example
+- All commands require you to be in a moderator role. See the commands below on how to add or remove a mod role (requires admin permission to add mod roles)
+- Read how to get the User ID [here](#how-to-get-user-id)
 
-### 🧾 Session-Scoped History
-- Temporary session visibility
-- Expired entries vanish automatically
-- No permanent tracking
+### Commands
 
-### 🔒 Failure-Safe Handling
-- Invalid keys return nothing
-- Corrupted payloads are rejected
-- Partial downloads are destroyed
+- `!mod <add|remove|list> <role ID>`
+  - Adds, removes the role ID to the list of moderator roles.
+  - If you want to `list` the roles, you do not need the role ID at the end.
 
----
+- `!mute <user ID> [reason]`
+  - Permanently mutes the user. Must be unmuted manually.
 
-## 🖼️ Image Encryption Flow
+- `!tempmute <user ID> <duration> [reason]`
+  - Temporarily mutes the user.
 
-```
+- `!unmute <user ID>`
+  - Unmutes the user
 
-┌──────────┐
-│  Image   │
-└────┬─────┘
-▼
-┌──────────┐
-│ Encrypt  │
-└────┬─────┘
-▼
-┌──────────────┐
-│ Encrypted Bin│
-└────┬─────────┘
-▼
-┌──────────────┐
-│ One-Time Key │
-└────┬─────────┘
-▼
-┌──────────────┐
-│ Auto Destroy │
-└──────────────┘
+- `!ban <user ID> <duration> <reason>`
+  - Bans the user from the server for the duration specified
+  - Reason is required. If you do not have a reason, you should not be banning them.
 
-```
+- `!unban <user ID>`
+  - Unbans the user from the server.
 
-⚠️ **Losing the key permanently destroys the data**
+- `!reload`
+  - Reloads the command registry for any changes that were made to commands
 
----
+- `!reload events`
+  - Reloads the event registry for any changes that were made
 
-## ✉️ Text Encryption Flow
+### How to get user ID
 
-```
+You should follow the discord guide [here](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
 
-Text → Encrypt → Payload + Key → Decrypt → Auto Expire
+**But the gist is:**
 
-```
+- Enable developer mode in discord
+- Right click their username in chat or on the sidebar
+- Click `Copy ID`
 
-- No storage
-- No logging
-- No recovery path
+### Issues with custom commands?
 
----
+Ensure that:
 
-## 🔐 Security Model Overview
-
-- Isolated encryption per request
-- Short-lived encrypted artifacts
-- No shared secrets
-- No server-side recovery
-
-> **Security failures destroy data instead of exposing it.**
-
----
-
-## 🧪 Ideal Use Cases
-
-- Secure image sharing
-- Ephemeral communication
-- Temporary secret exchange
-- Privacy-focused workflows
-- Security demonstrations
-- Encryption proof-of-concepts
-
----
-
-## ⚠️ Critical Warnings
-
-🚨 **THIS SYSTEM IS INTENTIONALLY UNFORGIVING**
-
-- Keys are **not recoverable**
-- Expired data is **permanently deleted**
-- No admin override
-- No backups
-- No undo
-
-**This is not cloud storage.  
-This is controlled data loss.**
-
----
-
-## 🕶️ Dark-Mode Optimized
-
-Designed to feel native in:
-- Dark terminals
-- Cyber-style dashboards
-- Minimal security panels
-- Hacker-inspired interfaces
-
----
-
-## 📜 Disclaimer
-
-This project is provided for **educational and experimental use**.
-
-Do **not**:
-- Use it for long-term storage
-- Treat it as a backup solution
-- Assume recovery is possible
-
-The author is **not responsible** for data loss caused by:
-- Lost keys
-- Expired files
-- User mistakes
-- Intentional destruction mechanisms
-
----
-
-## 🧑‍💻 Author
-
-**Shubham**  
-Project Identity: **SHUBHAMOS**
-
----
-
-## ⭐ Support
-
-If this project made you rethink privacy:
-
-- ⭐ Star the repository
-- 🧠 Learn from the architecture
-- 🔐 Respect ephemeral security
-- 🚀 Build something better
-
----
-
-<p align="center">
-  <b>Encrypt. Exchange. Erase.</b><br>
-  <i>Nothing lasts. That’s the point.</i>
-</p>
-```
+- Your command is a subclass of the base command class. (use `from commands.base import Command` and then define the class like this: `class MyCommand(Command):` so it is a subclass of it)
+- It has an `async def execute(self, message, **kwargs):` function to execute the command
+- It doesn't have basic python syntax errors.
