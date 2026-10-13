@@ -1,0 +1,18 @@
+{
+    "guilds": {
+        "784763845763006474": {
+            "muted_role_id": 1362305204585893999,
+            "log_channel_id": 1362308434367742095,
+            "mod_roles": [],
+            "muted_users": {},
+            "banned_users": {}
+        },
+        "946742674571010078": {
+            "muted_role_id": 1362305228640354446,
+            "log_channel_id": 1362305237813301288,
+            "mod_roles": [],
+            "muted_users": {},
+            "banned_users": {}
+        }
+    }
+}
