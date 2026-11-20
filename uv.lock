@@ -1,0 +1,962 @@
+version = 1
+requires-python = ">=3.11"
+resolution-markers = [
+    "python_full_version >= '3.13'",
+    "python_full_version < '3.13'",
+]
+
+[[package]]
+name = "aiohappyeyeballs"
+version = "2.6.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/26/30/[REDACTED_MATRIX_TOKEN]/aiohappyeyeballs-2.6.1.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 22760 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0f/15/[REDACTED_MATRIX_TOKEN]/aiohappyeyeballs-2.6.1-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 15265 },
+]
+
+[[package]]
+name = "aiohttp"
+version = "3.11.16"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohappyeyeballs" },
+    { name = "aiosignal" },
+    { name = "attrs" },
+    { name = "frozenlist" },
+    { name = "multidict" },
+    { name = "propcache" },
+    { name = "yarl" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f1/d9/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 7676826 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b1/98/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 708664 },
+    { url = "https://files.pythonhosted.org/packages/e6/27/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 468953 },
+    { url = "https://files.pythonhosted.org/packages/34/23/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 456065 },
+    { url = "https://files.pythonhosted.org/packages/36/23/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1687976 },
+    { url = "https://files.pythonhosted.org/packages/d0/5d/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1752711 },
+    { url = "https://files.pythonhosted.org/packages/64/4c/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1791305 },
+    { url = "https://files.pythonhosted.org/packages/58/28/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1674499 },
+    { url = "https://files.pythonhosted.org/packages/ad/55/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1622313 },
+    { url = "https://files.pythonhosted.org/packages/b1/df/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1658274 },
+    { url = "https://files.pythonhosted.org/packages/cc/6c/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1666704 },
+    { url = "https://files.pythonhosted.org/packages/1d/e2/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1652815 },
+    { url = "https://files.pythonhosted.org/packages/3a/52/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1735669 },
+    { url = "https://files.pythonhosted.org/packages/d5/54/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1760422 },
+    { url = "https://files.pythonhosted.org/packages/a7/53/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1694457 },
+    { url = "https://files.pythonhosted.org/packages/ce/6d/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 416817 },
+    { url = "https://files.pythonhosted.org/packages/e7/dd/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 442986 },
+    { url = "https://files.pythonhosted.org/packages/db/38/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 704881 },
+    { url = "https://files.pythonhosted.org/packages/21/ed/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 464564 },
+    { url = "https://files.pythonhosted.org/packages/3b/e1/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 456548 },
+    { url = "https://files.pythonhosted.org/packages/80/ad/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1691749 },
+    { url = "https://files.pythonhosted.org/packages/bd/ea/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1736874 },
+    { url = "https://files.pythonhosted.org/packages/51/41/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1786885 },
+    { url = "https://files.pythonhosted.org/packages/86/b3/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1698059 },
+    { url = "https://files.pythonhosted.org/packages/ce/be/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1626527 },
+    { url = "https://files.pythonhosted.org/packages/1d/1d/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1644036 },
+    { url = "https://files.pythonhosted.org/packages/2c/88/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1685270 },
+    { url = "https://files.pythonhosted.org/packages/2b/b1/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1650852 },
+    { url = "https://files.pythonhosted.org/packages/fe/94/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1704481 },
+    { url = "https://files.pythonhosted.org/packages/b1/6d/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1735370 },
+    { url = "https://files.pythonhosted.org/packages/73/2a/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1697619 },
+    { url = "https://files.pythonhosted.org/packages/61/d5/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 411710 },
+    { url = "https://files.pythonhosted.org/packages/33/fb/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 438012 },
+    { url = "https://files.pythonhosted.org/packages/52/52/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 698005 },
+    { url = "https://files.pythonhosted.org/packages/51/3e/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 461106 },
+    { url = "https://files.pythonhosted.org/packages/4f/85/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 453394 },
+    { url = "https://files.pythonhosted.org/packages/4b/04/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1666643 },
+    { url = "https://files.pythonhosted.org/packages/0e/27/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1721948 },
+    { url = "https://files.pythonhosted.org/packages/2c/4f/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1774454 },
+    { url = "https://files.pythonhosted.org/packages/73/5b/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1677785 },
+    { url = "https://files.pythonhosted.org/packages/10/ee/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1608456 },
+    { url = "https://files.pythonhosted.org/packages/8b/48/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1622424 },
+    { url = "https://files.pythonhosted.org/packages/6f/27/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1660943 },
+    { url = "https://files.pythonhosted.org/packages/d6/e1/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1622797 },
+    { url = "https://files.pythonhosted.org/packages/46/9e/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1687162 },
+    { url = "https://files.pythonhosted.org/packages/ad/6b/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1718518 },
+    { url = "https://files.pythonhosted.org/packages/e5/18/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1675254 },
+    { url = "https://files.pythonhosted.org/packages/32/d9/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 410698 },
+    { url = "https://files.pythonhosted.org/packages/ce/ed/[REDACTED_MATRIX_TOKEN]/aiohttp-3.11.16-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 436395 },
+]
+
+[[package]]
+name = "aiosignal"
+version = "1.3.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "frozenlist" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ba/b5/[REDACTED_MATRIX_TOKEN]/aiosignal-1.3.2.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 19424 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ec/6a/[REDACTED_MATRIX_TOKEN]/aiosignal-1.3.2-py2.py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 7597 },
+]
+
+[[package]]
+name = "attrs"
+version = "25.3.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/5a/b0/[REDACTED_MATRIX_TOKEN]/attrs-25.3.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 812032 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/77/06/[REDACTED_MATRIX_TOKEN]/attrs-25.3.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 63815 },
+]
+
+[[package]]
+name = "audioop-lts"
+version = "0.2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/dd/3b/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 30204 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/01/91/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 46252 },
+    { url = "https://files.pythonhosted.org/packages/ec/f6/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 27183 },
+    { url = "https://files.pythonhosted.org/packages/ea/7e/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 26726 },
+    { url = "https://files.pythonhosted.org/packages/ef/f8/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 80718 },
+    { url = "https://files.pythonhosted.org/packages/8f/ea/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 88326 },
+    { url = "https://files.pythonhosted.org/packages/33/79/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 80539 },
+    { url = "https://files.pythonhosted.org/packages/b2/d3/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 78577 },
+    { url = "https://files.pythonhosted.org/packages/7a/1d/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 82074 },
+    { url = "https://files.pythonhosted.org/packages/36/89/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 84210 },
+    { url = "https://files.pythonhosted.org/packages/a5/57/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 85664 },
+    { url = "https://files.pythonhosted.org/packages/16/01/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 93255 },
+    { url = "https://files.pythonhosted.org/packages/3e/28/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 87760 },
+    { url = "https://files.pythonhosted.org/packages/6d/d8/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 84992 },
+    { url = "https://files.pythonhosted.org/packages/ef/9a/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 26059 },
+    { url = "https://files.pythonhosted.org/packages/3a/1c/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 30412 },
+    { url = "https://files.pythonhosted.org/packages/c4/e9/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-abi3-win_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23578 },
+    { url = "https://files.pythonhosted.org/packages/7a/99/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 46827 },
+    { url = "https://files.pythonhosted.org/packages/c4/e3/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 27479 },
+    { url = "https://files.pythonhosted.org/packages/a6/0d/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 27056 },
+    { url = "https://files.pythonhosted.org/packages/86/46/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 87802 },
+    { url = "https://files.pythonhosted.org/packages/56/44/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 95016 },
+    { url = "https://files.pythonhosted.org/packages/a8/2a/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 87394 },
+    { url = "https://files.pythonhosted.org/packages/14/ae/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 84874 },
+    { url = "https://files.pythonhosted.org/packages/26/1c/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 88698 },
+    { url = "https://files.pythonhosted.org/packages/2c/db/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 90401 },
+    { url = "https://files.pythonhosted.org/packages/99/6e/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 91864 },
+    { url = "https://files.pythonhosted.org/packages/08/58/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 98796 },
+    { url = "https://files.pythonhosted.org/packages/ee/77/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 94116 },
+    { url = "https://files.pythonhosted.org/packages/1a/60/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 91520 },
+    { url = "https://files.pythonhosted.org/packages/65/6d/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 26482 },
+    { url = "https://files.pythonhosted.org/packages/01/09/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 30780 },
+    { url = "https://files.pythonhosted.org/packages/5d/35/[REDACTED_MATRIX_TOKEN]/audioop_lts-0.2.1-cp313-cp313t-win_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23918 },
+]
+
+[[package]]
+name = "blinker"
+version = "1.9.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/21/28/[REDACTED_MATRIX_TOKEN]/blinker-1.9.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 22460 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/10/cb/[REDACTED_MATRIX_TOKEN]/blinker-1.9.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 8458 },
+]
+
+[[package]]
+name = "certifi"
+version = "2025.1.31"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1c/ab/[REDACTED_MATRIX_TOKEN]/certifi-2025.1.31.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 167577 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/38/fc/[REDACTED_MATRIX_TOKEN]/certifi-2025.1.31-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 166393 },
+]
+
+[[package]]
+name = "charset-normalizer"
+version = "3.4.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/16/b0/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 123188 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/72/80/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 194995 },
+    { url = "https://files.pythonhosted.org/packages/7a/28/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 139471 },
+    { url = "https://files.pythonhosted.org/packages/71/64/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 149831 },
+    { url = "https://files.pythonhosted.org/packages/37/ed/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 142335 },
+    { url = "https://files.pythonhosted.org/packages/88/83/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 143862 },
+    { url = "https://files.pythonhosted.org/packages/c6/c7/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 145673 },
+    { url = "https://files.pythonhosted.org/packages/68/85/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 140211 },
+    { url = "https://files.pythonhosted.org/packages/28/a3/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 148039 },
+    { url = "https://files.pythonhosted.org/packages/85/e4/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 151939 },
+    { url = "https://files.pythonhosted.org/packages/b1/82/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 149075 },
+    { url = "https://files.pythonhosted.org/packages/3d/7b/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 144340 },
+    { url = "https://files.pythonhosted.org/packages/b5/b6/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 95205 },
+    { url = "https://files.pythonhosted.org/packages/1e/ab/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 102441 },
+    { url = "https://files.pythonhosted.org/packages/0a/9a/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 196105 },
+    { url = "https://files.pythonhosted.org/packages/d3/8c/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 140404 },
+    { url = "https://files.pythonhosted.org/packages/ad/8f/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 150423 },
+    { url = "https://files.pythonhosted.org/packages/f0/b8/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 143184 },
+    { url = "https://files.pythonhosted.org/packages/3e/a2/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 145268 },
+    { url = "https://files.pythonhosted.org/packages/74/94/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 147601 },
+    { url = "https://files.pythonhosted.org/packages/7c/5f/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 141098 },
+    { url = "https://files.pythonhosted.org/packages/78/d4/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 149520 },
+    { url = "https://files.pythonhosted.org/packages/c5/96/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 152852 },
+    { url = "https://files.pythonhosted.org/packages/84/c9/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 150488 },
+    { url = "https://files.pythonhosted.org/packages/13/0e/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 146192 },
+    { url = "https://files.pythonhosted.org/packages/b2/21/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 95550 },
+    { url = "https://files.pythonhosted.org/packages/21/5b/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 102785 },
+    { url = "https://files.pythonhosted.org/packages/38/94/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 195698 },
+    { url = "https://files.pythonhosted.org/packages/24/2e/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 140162 },
+    { url = "https://files.pythonhosted.org/packages/24/4e/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 150263 },
+    { url = "https://files.pythonhosted.org/packages/5e/67/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 142966 },
+    { url = "https://files.pythonhosted.org/packages/52/ed/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 144992 },
+    { url = "https://files.pythonhosted.org/packages/96/2c/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 147162 },
+    { url = "https://files.pythonhosted.org/packages/b4/41/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 140972 },
+    { url = "https://files.pythonhosted.org/packages/fb/43/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 149095 },
+    { url = "https://files.pythonhosted.org/packages/4c/ff/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 152668 },
+    { url = "https://files.pythonhosted.org/packages/6c/71/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 150073 },
+    { url = "https://files.pythonhosted.org/packages/e4/93/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 145732 },
+    { url = "https://files.pythonhosted.org/packages/cd/e5/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 95391 },
+    { url = "https://files.pythonhosted.org/packages/27/f2/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 102702 },
+    { url = "https://files.pythonhosted.org/packages/0e/f6/[REDACTED_MATRIX_TOKEN]/charset_normalizer-3.4.1-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 49767 },
+]
+
+[[package]]
+name = "click"
+version = "8.1.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b9/2e/[REDACTED_MATRIX_TOKEN]/click-8.1.8.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226593 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7e/d4/[REDACTED_MATRIX_TOKEN]/click-8.1.8-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 98188 },
+]
+
+[[package]]
+name = "colorama"
+version = "0.4.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d8/53/[REDACTED_MATRIX_TOKEN]/colorama-0.4.6.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 27697 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/d6/[REDACTED_MATRIX_TOKEN]/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 25335 },
+]
+
+[[package]]
+name = "discord-py"
+version = "2.5.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "audioop-lts", marker = "python_full_version >= '3.13'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7f/dd/[REDACTED_MATRIX_TOKEN]/discord_py-2.5.2.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1054879 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/57/a8/[REDACTED_MATRIX_TOKEN]/discord_py-2.5.2-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1155105 },
+]
+
+[[package]]
+name = "dnspython"
+version = "2.7.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b5/4a/[REDACTED_MATRIX_TOKEN]/dnspython-2.7.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 345197 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/68/1b/[REDACTED_MATRIX_TOKEN]/dnspython-2.7.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 313632 },
+]
+
+[[package]]
+name = "email-validator"
+version = "2.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "dnspython" },
+    { name = "idna" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/48/ce/[REDACTED_MATRIX_TOKEN]/email_validator-2.2.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 48967 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d7/ee/[REDACTED_MATRIX_TOKEN]/email_validator-2.2.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 33521 },
+]
+
+[[package]]
+name = "flask"
+version = "3.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "blinker" },
+    { name = "click" },
+    { name = "itsdangerous" },
+    { name = "jinja2" },
+    { name = "werkzeug" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/89/50/[REDACTED_MATRIX_TOKEN]/flask-3.1.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 680824 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/af/47/[REDACTED_MATRIX_TOKEN]/flask-3.1.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 102979 },
+]
+
+[[package]]
+name = "flask-login"
+version = "0.6.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "flask" },
+    { name = "werkzeug" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c3/6e/[REDACTED_MATRIX_TOKEN]/Flask-Login-0.6.3.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 48834 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/59/f5/[REDACTED_MATRIX_TOKEN]/Flask_Login-0.6.3-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 17303 },
+]
+
+[[package]]
+name = "flask-sqlalchemy"
+version = "3.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "flask" },
+    { name = "sqlalchemy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/91/53/[REDACTED_MATRIX_TOKEN]/flask_sqlalchemy-3.1.1.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 81899 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1d/6a/[REDACTED_MATRIX_TOKEN]/flask_sqlalchemy-3.1.1-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 25125 },
+]
+
+[[package]]
+name = "flask-wtf"
+version = "1.2.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "flask" },
+    { name = "itsdangerous" },
+    { name = "wtforms" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/80/9b/[REDACTED_MATRIX_TOKEN]/flask_wtf-1.2.2.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 42641 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dc/19/[REDACTED_MATRIX_TOKEN]/flask_wtf-1.2.2-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 12779 },
+]
+
+[[package]]
+name = "frozenlist"
+version = "1.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/8f/ed/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 39930 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/79/43/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 94987 },
+    { url = "https://files.pythonhosted.org/packages/bb/bf/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 54584 },
+    { url = "https://files.pythonhosted.org/packages/2c/31/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 52499 },
+    { url = "https://files.pythonhosted.org/packages/98/a8/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 276357 },
+    { url = "https://files.pythonhosted.org/packages/ad/c9/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 287516 },
+    { url = "https://files.pythonhosted.org/packages/a1/ff/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 283131 },
+    { url = "https://files.pythonhosted.org/packages/59/a0/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 261320 },
+    { url = "https://files.pythonhosted.org/packages/b8/5f/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 274877 },
+    { url = "https://files.pythonhosted.org/packages/fa/79/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 269592 },
+    { url = "https://files.pythonhosted.org/packages/19/e2/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 265934 },
+    { url = "https://files.pythonhosted.org/packages/d5/c9/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 283859 },
+    { url = "https://files.pythonhosted.org/packages/05/f5/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 287560 },
+    { url = "https://files.pythonhosted.org/packages/9d/f8/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 277150 },
+    { url = "https://files.pythonhosted.org/packages/37/48/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 45244 },
+    { url = "https://files.pythonhosted.org/packages/ca/8c/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 51634 },
+    { url = "https://files.pythonhosted.org/packages/79/73/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 94026 },
+    { url = "https://files.pythonhosted.org/packages/ab/04/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 54150 },
+    { url = "https://files.pythonhosted.org/packages/d0/9a/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 51927 },
+    { url = "https://files.pythonhosted.org/packages/e3/12/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 282647 },
+    { url = "https://files.pythonhosted.org/packages/77/f2/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 289052 },
+    { url = "https://files.pythonhosted.org/packages/bd/9f/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 291719 },
+    { url = "https://files.pythonhosted.org/packages/41/d1/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 267433 },
+    { url = "https://files.pythonhosted.org/packages/af/f2/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 283591 },
+    { url = "https://files.pythonhosted.org/packages/29/e2/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 273249 },
+    { url = "https://files.pythonhosted.org/packages/2e/6e/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 271075 },
+    { url = "https://files.pythonhosted.org/packages/ae/f0/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 285398 },
+    { url = "https://files.pythonhosted.org/packages/4d/36/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 294445 },
+    { url = "https://files.pythonhosted.org/packages/37/e0/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 280569 },
+    { url = "https://files.pythonhosted.org/packages/f9/7c/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 44721 },
+    { url = "https://files.pythonhosted.org/packages/b1/56/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 51329 },
+    { url = "https://files.pythonhosted.org/packages/da/3b/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 91538 },
+    { url = "https://files.pythonhosted.org/packages/c7/d1/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 52849 },
+    { url = "https://files.pythonhosted.org/packages/3a/c8/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 50583 },
+    { url = "https://files.pythonhosted.org/packages/1f/22/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 265636 },
+    { url = "https://files.pythonhosted.org/packages/80/cf/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 270214 },
+    { url = "https://files.pythonhosted.org/packages/a1/58/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 273905 },
+    { url = "https://files.pythonhosted.org/packages/ab/66/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 250542 },
+    { url = "https://files.pythonhosted.org/packages/f6/b8/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 267026 },
+    { url = "https://files.pythonhosted.org/packages/2e/a4/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 257690 },
+    { url = "https://files.pythonhosted.org/packages/de/9a/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 253893 },
+    { url = "https://files.pythonhosted.org/packages/c6/23/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 267006 },
+    { url = "https://files.pythonhosted.org/packages/08/c4/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 276157 },
+    { url = "https://files.pythonhosted.org/packages/c0/29/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 264642 },
+    { url = "https://files.pythonhosted.org/packages/ab/42/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 44914 },
+    { url = "https://files.pythonhosted.org/packages/17/c4/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 51167 },
+    { url = "https://files.pythonhosted.org/packages/c6/c8/[REDACTED_MATRIX_TOKEN]/frozenlist-1.5.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 11901 },
+]
+
+[[package]]
+name = "greenlet"
+version = "3.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b0/9c/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 183685 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2d/d3/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp311-cp311-macosx_11_0_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 268620 },
+    { url = "https://files.pythonhosted.org/packages/ff/40/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 628787 },
+    { url = "https://files.pythonhosted.org/packages/12/8d/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 640838 },
+    { url = "https://files.pythonhosted.org/packages/d5/f1/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 636760 },
+    { url = "https://files.pythonhosted.org/packages/12/d6/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 636001 },
+    { url = "https://files.pythonhosted.org/packages/fc/b2/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 583936 },
+    { url = "https://files.pythonhosted.org/packages/44/a8/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp311-cp311-musllinux_1_1_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1112901 },
+    { url = "https://files.pythonhosted.org/packages/45/23/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1138328 },
+    { url = "https://files.pythonhosted.org/packages/ba/82/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 295415 },
+    { url = "https://files.pythonhosted.org/packages/0e/8d/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp312-cp312-macosx_11_0_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 270391 },
+    { url = "https://files.pythonhosted.org/packages/8b/6f/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 637202 },
+    { url = "https://files.pythonhosted.org/packages/71/f8/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 651391 },
+    { url = "https://files.pythonhosted.org/packages/a9/44/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 646118 },
+    { url = "https://files.pythonhosted.org/packages/f0/3e/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 648079 },
+    { url = "https://files.pythonhosted.org/packages/56/e5/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 603825 },
+    { url = "https://files.pythonhosted.org/packages/4a/11/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp312-cp312-musllinux_1_1_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1119582 },
+    { url = "https://files.pythonhosted.org/packages/17/26/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1147452 },
+    { url = "https://files.pythonhosted.org/packages/8a/d4/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 296217 },
+    { url = "https://files.pythonhosted.org/packages/c9/43/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313-macosx_11_0_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 269131 },
+    { url = "https://files.pythonhosted.org/packages/7c/7d/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 637323 },
+    { url = "https://files.pythonhosted.org/packages/89/65/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 651430 },
+    { url = "https://files.pythonhosted.org/packages/f0/07/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 645798 },
+    { url = "https://files.pythonhosted.org/packages/35/5b/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 648271 },
+    { url = "https://files.pythonhosted.org/packages/4d/dd/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 606779 },
+    { url = "https://files.pythonhosted.org/packages/9d/24/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313-musllinux_1_1_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1117968 },
+    { url = "https://files.pythonhosted.org/packages/6c/ff/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313-musllinux_1_1_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1145510 },
+    { url = "https://files.pythonhosted.org/packages/dc/62/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 296004 },
+    { url = "https://files.pythonhosted.org/packages/62/6d/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 629900 },
+    { url = "https://files.pythonhosted.org/packages/5e/a9/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313t-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 635270 },
+    { url = "https://files.pythonhosted.org/packages/34/92/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313t-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 632534 },
+    { url = "https://files.pythonhosted.org/packages/da/7f/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 628826 },
+    { url = "https://files.pythonhosted.org/packages/9f/59/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 593697 },
+    { url = "https://files.pythonhosted.org/packages/bb/09/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313t-musllinux_1_1_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1105762 },
+    { url = "https://files.pythonhosted.org/packages/4d/b9/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp313-cp313t-musllinux_1_1_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1125173 },
+    { url = "https://files.pythonhosted.org/packages/80/7b/[REDACTED_MATRIX_TOKEN]/greenlet-3.2.0-cp314-cp314-macosx_11_0_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 269908 },
+]
+
+[[package]]
+name = "gunicorn"
+version = "23.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/34/72/[REDACTED_MATRIX_TOKEN]/gunicorn-23.0.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 375031 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cb/7d/[REDACTED_MATRIX_TOKEN]/gunicorn-23.0.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 85029 },
+]
+
+[[package]]
+name = "idna"
+version = "3.10"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f1/70/[REDACTED_MATRIX_TOKEN]/idna-3.10.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 190490 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/76/c6/[REDACTED_MATRIX_TOKEN]/idna-3.10-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 70442 },
+]
+
+[[package]]
+name = "itsdangerous"
+version = "2.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/9c/cb/[REDACTED_MATRIX_TOKEN]/itsdangerous-2.2.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 54410 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/04/96/[REDACTED_MATRIX_TOKEN]/itsdangerous-2.2.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 16234 },
+]
+
+[[package]]
+name = "jinja2"
+version = "3.1.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markupsafe" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/df/bf/[REDACTED_MATRIX_TOKEN]/jinja2-3.1.6.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 245115 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/62/a1/[REDACTED_MATRIX_TOKEN]/jinja2-3.1.6-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 134899 },
+]
+
+[[package]]
+name = "markupsafe"
+version = "3.0.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b2/97/[REDACTED_MATRIX_TOKEN]/markupsafe-3.0.2.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 20537 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6b/28/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 14353 },
+    { url = "https://files.pythonhosted.org/packages/6c/30/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 12392 },
+    { url = "https://files.pythonhosted.org/packages/f2/96/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23984 },
+    { url = "https://files.pythonhosted.org/packages/f1/a4/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23120 },
+    { url = "https://files.pythonhosted.org/packages/8d/21/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23032 },
+    { url = "https://files.pythonhosted.org/packages/00/7b/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 24057 },
+    { url = "https://files.pythonhosted.org/packages/f9/ac/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23359 },
+    { url = "https://files.pythonhosted.org/packages/69/84/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23306 },
+    { url = "https://files.pythonhosted.org/packages/9a/34/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 15094 },
+    { url = "https://files.pythonhosted.org/packages/da/b8/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 15521 },
+    { url = "https://files.pythonhosted.org/packages/22/09/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 14274 },
+    { url = "https://files.pythonhosted.org/packages/6b/b0/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 12348 },
+    { url = "https://files.pythonhosted.org/packages/e0/25/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 24149 },
+    { url = "https://files.pythonhosted.org/packages/f3/f0/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23118 },
+    { url = "https://files.pythonhosted.org/packages/d5/da/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 22993 },
+    { url = "https://files.pythonhosted.org/packages/da/0e/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 24178 },
+    { url = "https://files.pythonhosted.org/packages/c4/f6/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23319 },
+    { url = "https://files.pythonhosted.org/packages/a2/82/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23352 },
+    { url = "https://files.pythonhosted.org/packages/51/ae/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 15097 },
+    { url = "https://files.pythonhosted.org/packages/c1/80/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 15601 },
+    { url = "https://files.pythonhosted.org/packages/83/0e/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 14274 },
+    { url = "https://files.pythonhosted.org/packages/2b/6d/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 12352 },
+    { url = "https://files.pythonhosted.org/packages/d2/f5/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 24122 },
+    { url = "https://files.pythonhosted.org/packages/0c/91/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23085 },
+    { url = "https://files.pythonhosted.org/packages/c2/cf/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 22978 },
+    { url = "https://files.pythonhosted.org/packages/2a/9f/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 24208 },
+    { url = "https://files.pythonhosted.org/packages/f9/bf/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23357 },
+    { url = "https://files.pythonhosted.org/packages/ce/4f/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23344 },
+    { url = "https://files.pythonhosted.org/packages/ee/55/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 15101 },
+    { url = "https://files.pythonhosted.org/packages/29/88/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 15603 },
+    { url = "https://files.pythonhosted.org/packages/62/6a/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 14510 },
+    { url = "https://files.pythonhosted.org/packages/7a/06/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 12486 },
+    { url = "https://files.pythonhosted.org/packages/34/cf/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 25480 },
+    { url = "https://files.pythonhosted.org/packages/0c/e3/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23914 },
+    { url = "https://files.pythonhosted.org/packages/66/8c/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 23796 },
+    { url = "https://files.pythonhosted.org/packages/bb/35/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 25473 },
+    { url = "https://files.pythonhosted.org/packages/e6/32/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 24114 },
+    { url = "https://files.pythonhosted.org/packages/0d/80/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 24098 },
+    { url = "https://files.pythonhosted.org/packages/82/78/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 15208 },
+    { url = "https://files.pythonhosted.org/packages/4f/65/[REDACTED_MATRIX_TOKEN]/MarkupSafe-3.0.2-cp313-cp313t-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 15739 },
+]
+
+[[package]]
+name = "multidict"
+version = "6.4.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/da/2c/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 89372 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/16/e0/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 65259 },
+    { url = "https://files.pythonhosted.org/packages/44/79/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 38451 },
+    { url = "https://files.pythonhosted.org/packages/f4/35/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 37706 },
+    { url = "https://files.pythonhosted.org/packages/f6/d1/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226669 },
+    { url = "https://files.pythonhosted.org/packages/40/7f/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 223182 },
+    { url = "https://files.pythonhosted.org/packages/51/7b/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 235025 },
+    { url = "https://files.pythonhosted.org/packages/3b/f6/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 231481 },
+    { url = "https://files.pythonhosted.org/packages/70/57/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 223492 },
+    { url = "https://files.pythonhosted.org/packages/30/4d/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 217279 },
+    { url = "https://files.pythonhosted.org/packages/7f/e7/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 228733 },
+    { url = "https://files.pythonhosted.org/packages/88/f5/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 218089 },
+    { url = "https://files.pythonhosted.org/packages/36/8a/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 225257 },
+    { url = "https://files.pythonhosted.org/packages/8c/76/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 234728 },
+    { url = "https://files.pythonhosted.org/packages/64/44/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230087 },
+    { url = "https://files.pythonhosted.org/packages/0f/ae/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 223137 },
+    { url = "https://files.pythonhosted.org/packages/22/50/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 34959 },
+    { url = "https://files.pythonhosted.org/packages/2f/63/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 38541 },
+    { url = "https://files.pythonhosted.org/packages/fc/bb/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 64019 },
+    { url = "https://files.pythonhosted.org/packages/7e/b5/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 37925 },
+    { url = "https://files.pythonhosted.org/packages/b4/e2/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 37008 },
+    { url = "https://files.pythonhosted.org/packages/60/23/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 224374 },
+    { url = "https://files.pythonhosted.org/packages/86/35/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-manylinux_2_17_armv7l.manylinux2014_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230869 },
+    { url = "https://files.pythonhosted.org/packages/49/97/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 231949 },
+    { url = "https://files.pythonhosted.org/packages/56/ce/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 231032 },
+    { url = "https://files.pythonhosted.org/packages/f0/ac/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 223517 },
+    { url = "https://files.pythonhosted.org/packages/db/e6/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 216291 },
+    { url = "https://files.pythonhosted.org/packages/fa/84/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 228982 },
+    { url = "https://files.pythonhosted.org/packages/82/94/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226823 },
+    { url = "https://files.pythonhosted.org/packages/09/f0/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 222714 },
+    { url = "https://files.pythonhosted.org/packages/e7/a2/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 233739 },
+    { url = "https://files.pythonhosted.org/packages/79/68/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230809 },
+    { url = "https://files.pythonhosted.org/packages/e6/72/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226934 },
+    { url = "https://files.pythonhosted.org/packages/12/c1/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 35242 },
+    { url = "https://files.pythonhosted.org/packages/06/24/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 38635 },
+    { url = "https://files.pythonhosted.org/packages/6c/4b/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 63831 },
+    { url = "https://files.pythonhosted.org/packages/45/05/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 37888 },
+    { url = "https://files.pythonhosted.org/packages/0b/43/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 36852 },
+    { url = "https://files.pythonhosted.org/packages/8a/68/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 223644 },
+    { url = "https://files.pythonhosted.org/packages/80/1b/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-manylinux_2_17_armv7l.manylinux2014_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230446 },
+    { url = "https://files.pythonhosted.org/packages/e2/46/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 231070 },
+    { url = "https://files.pythonhosted.org/packages/a7/b8/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 229956 },
+    { url = "https://files.pythonhosted.org/packages/0c/93/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 222599 },
+    { url = "https://files.pythonhosted.org/packages/63/8c/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 216136 },
+    { url = "https://files.pythonhosted.org/packages/72/f5/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 228139 },
+    { url = "https://files.pythonhosted.org/packages/bb/ba/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226251 },
+    { url = "https://files.pythonhosted.org/packages/cc/e2/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 221868 },
+    { url = "https://files.pythonhosted.org/packages/26/20/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 233106 },
+    { url = "https://files.pythonhosted.org/packages/ee/8d/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230163 },
+    { url = "https://files.pythonhosted.org/packages/15/e9/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 225906 },
+    { url = "https://files.pythonhosted.org/packages/f1/31/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 35238 },
+    { url = "https://files.pythonhosted.org/packages/23/57/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 38799 },
+    { url = "https://files.pythonhosted.org/packages/c9/13/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 68642 },
+    { url = "https://files.pythonhosted.org/packages/85/45/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 40028 },
+    { url = "https://files.pythonhosted.org/packages/a7/29/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 39424 },
+    { url = "https://files.pythonhosted.org/packages/f6/f0/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226178 },
+    { url = "https://files.pythonhosted.org/packages/a3/79/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-manylinux_2_17_armv7l.manylinux2014_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 222617 },
+    { url = "https://files.pythonhosted.org/packages/06/db/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 227919 },
+    { url = "https://files.pythonhosted.org/packages/b1/db/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226097 },
+    { url = "https://files.pythonhosted.org/packages/c2/95/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 220706 },
+    { url = "https://files.pythonhosted.org/packages/d1/af/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 211728 },
+    { url = "https://files.pythonhosted.org/packages/e7/42/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226276 },
+    { url = "https://files.pythonhosted.org/packages/28/6b/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 212069 },
+    { url = "https://files.pythonhosted.org/packages/55/34/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 217858 },
+    { url = "https://files.pythonhosted.org/packages/04/08/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226988 },
+    { url = "https://files.pythonhosted.org/packages/82/e3/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 220435 },
+    { url = "https://files.pythonhosted.org/packages/e0/32/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 221494 },
+    { url = "https://files.pythonhosted.org/packages/b9/3b/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 41775 },
+    { url = "https://files.pythonhosted.org/packages/e8/4e/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-cp313-cp313t-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 45946 },
+    { url = "https://files.pythonhosted.org/packages/96/10/[REDACTED_MATRIX_TOKEN]/multidict-6.4.3-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 10400 },
+]
+
+[[package]]
+name = "packaging"
+version = "24.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/63/[REDACTED_MATRIX_TOKEN]/packaging-24.2.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 163950 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/88/ef/[REDACTED_MATRIX_TOKEN]/packaging-24.2-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 65451 },
+]
+
+[[package]]
+name = "propcache"
+version = "0.3.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/07/c8/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 43651 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/90/0f/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 80243 },
+    { url = "https://files.pythonhosted.org/packages/ce/84/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 46503 },
+    { url = "https://files.pythonhosted.org/packages/e2/c8/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 45934 },
+    { url = "https://files.pythonhosted.org/packages/59/f9/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 233633 },
+    { url = "https://files.pythonhosted.org/packages/e7/64/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 241124 },
+    { url = "https://files.pythonhosted.org/packages/aa/bf/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 240283 },
+    { url = "https://files.pythonhosted.org/packages/fa/c9/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 232498 },
+    { url = "https://files.pythonhosted.org/packages/8e/66/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 221486 },
+    { url = "https://files.pythonhosted.org/packages/f5/f9/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 222675 },
+    { url = "https://files.pythonhosted.org/packages/98/b8/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 215727 },
+    { url = "https://files.pythonhosted.org/packages/89/2d/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 217878 },
+    { url = "https://files.pythonhosted.org/packages/7a/fd/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230558 },
+    { url = "https://files.pythonhosted.org/packages/90/38/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 233754 },
+    { url = "https://files.pythonhosted.org/packages/06/5d/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226088 },
+    { url = "https://files.pythonhosted.org/packages/54/6e/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 40859 },
+    { url = "https://files.pythonhosted.org/packages/1d/3a/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 45153 },
+    { url = "https://files.pythonhosted.org/packages/41/aa/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 80430 },
+    { url = "https://files.pythonhosted.org/packages/1a/d8/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 46637 },
+    { url = "https://files.pythonhosted.org/packages/ae/bd/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 46123 },
+    { url = "https://files.pythonhosted.org/packages/d4/b0/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 243031 },
+    { url = "https://files.pythonhosted.org/packages/0a/06/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 249100 },
+    { url = "https://files.pythonhosted.org/packages/f1/eb/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 250170 },
+    { url = "https://files.pythonhosted.org/packages/3b/4c/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 245000 },
+    { url = "https://files.pythonhosted.org/packages/e8/fd/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230262 },
+    { url = "https://files.pythonhosted.org/packages/c4/42/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 236772 },
+    { url = "https://files.pythonhosted.org/packages/7c/9c/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 231133 },
+    { url = "https://files.pythonhosted.org/packages/98/a1/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230741 },
+    { url = "https://files.pythonhosted.org/packages/67/0c/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 244047 },
+    { url = "https://files.pythonhosted.org/packages/f7/50/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 246467 },
+    { url = "https://files.pythonhosted.org/packages/a9/02/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 241022 },
+    { url = "https://files.pythonhosted.org/packages/db/19/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 40647 },
+    { url = "https://files.pythonhosted.org/packages/24/bb/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 44784 },
+    { url = "https://files.pythonhosted.org/packages/58/60/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 77865 },
+    { url = "https://files.pythonhosted.org/packages/6f/d4/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 45452 },
+    { url = "https://files.pythonhosted.org/packages/d1/b5/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 44800 },
+    { url = "https://files.pythonhosted.org/packages/62/37/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 225804 },
+    { url = "https://files.pythonhosted.org/packages/0d/f1/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230650 },
+    { url = "https://files.pythonhosted.org/packages/3e/a2/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 234235 },
+    { url = "https://files.pythonhosted.org/packages/45/5f/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 228249 },
+    { url = "https://files.pythonhosted.org/packages/62/1e/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 214964 },
+    { url = "https://files.pythonhosted.org/packages/db/a0/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 222501 },
+    { url = "https://files.pythonhosted.org/packages/18/6d/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 217917 },
+    { url = "https://files.pythonhosted.org/packages/98/37/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 217089 },
+    { url = "https://files.pythonhosted.org/packages/53/1b/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 228102 },
+    { url = "https://files.pythonhosted.org/packages/cd/a7/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 230122 },
+    { url = "https://files.pythonhosted.org/packages/35/36/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 226818 },
+    { url = "https://files.pythonhosted.org/packages/cc/27/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 40112 },
+    { url = "https://files.pythonhosted.org/packages/a6/2c/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 44034 },
+    { url = "https://files.pythonhosted.org/packages/5a/a8/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 82613 },
+    { url = "https://files.pythonhosted.org/packages/4d/e5/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 47763 },
+    { url = "https://files.pythonhosted.org/packages/87/9a/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 47175 },
+    { url = "https://files.pythonhosted.org/packages/3e/2f/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 292265 },
+    { url = "https://files.pythonhosted.org/packages/40/8d/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 294412 },
+    { url = "https://files.pythonhosted.org/packages/39/e6/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 294290 },
+    { url = "https://files.pythonhosted.org/packages/3b/4d/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 282926 },
+    { url = "https://files.pythonhosted.org/packages/57/2b/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 267808 },
+    { url = "https://files.pythonhosted.org/packages/11/1c/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 290916 },
+    { url = "https://files.pythonhosted.org/packages/4b/74/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 262661 },
+    { url = "https://files.pythonhosted.org/packages/c2/d7/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 264384 },
+    { url = "https://files.pythonhosted.org/packages/b7/d5/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 291420 },
+    { url = "https://files.pythonhosted.org/packages/58/70/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 290880 },
+    { url = "https://files.pythonhosted.org/packages/4a/1f/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 287407 },
+    { url = "https://files.pythonhosted.org/packages/3e/66/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 42573 },
+    { url = "https://files.pythonhosted.org/packages/cb/8f/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-cp313-cp313t-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 46757 },
+    { url = "https://files.pythonhosted.org/packages/b8/d3/[REDACTED_MATRIX_TOKEN]/propcache-0.3.1-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 12376 },
+]
+
+[[package]]
+name = "psycopg2-binary"
+version = "2.9.10"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/cb/0e/[REDACTED_MATRIX_TOKEN]/psycopg2-binary-2.9.10.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 385764 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9c/8f/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-macosx_12_0_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3043397 },
+    { url = "https://files.pythonhosted.org/packages/15/30/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-macosx_14_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3274806 },
+    { url = "https://files.pythonhosted.org/packages/66/6e/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2851370 },
+    { url = "https://files.pythonhosted.org/packages/7f/fd/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3080780 },
+    { url = "https://files.pythonhosted.org/packages/e6/c4/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3264583 },
+    { url = "https://files.pythonhosted.org/packages/5d/f1/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3019831 },
+    { url = "https://files.pythonhosted.org/packages/9e/2e/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2871822 },
+    { url = "https://files.pythonhosted.org/packages/01/9e/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2820975 },
+    { url = "https://files.pythonhosted.org/packages/a5/f0/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2919320 },
+    { url = "https://files.pythonhosted.org/packages/dc/9a/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2957617 },
+    { url = "https://files.pythonhosted.org/packages/e2/6b/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1024618 },
+    { url = "https://files.pythonhosted.org/packages/61/69/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1163816 },
+    { url = "https://files.pythonhosted.org/packages/49/7d/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-macosx_12_0_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3044771 },
+    { url = "https://files.pythonhosted.org/packages/8b/31/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3275336 },
+    { url = "https://files.pythonhosted.org/packages/30/b7/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2851637 },
+    { url = "https://files.pythonhosted.org/packages/0b/b1/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3082097 },
+    { url = "https://files.pythonhosted.org/packages/18/ed/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3264776 },
+    { url = "https://files.pythonhosted.org/packages/10/db/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3020968 },
+    { url = "https://files.pythonhosted.org/packages/94/28/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2872334 },
+    { url = "https://files.pythonhosted.org/packages/05/f7/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2822722 },
+    { url = "https://files.pythonhosted.org/packages/4d/e4/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2920132 },
+    { url = "https://files.pythonhosted.org/packages/2d/70/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2959312 },
+    { url = "https://files.pythonhosted.org/packages/d3/bd/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1025191 },
+    { url = "https://files.pythonhosted.org/packages/92/29/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1164031 },
+    { url = "https://files.pythonhosted.org/packages/3e/30/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-macosx_12_0_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3044699 },
+    { url = "https://files.pythonhosted.org/packages/35/44/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3275245 },
+    { url = "https://files.pythonhosted.org/packages/1b/11/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2851631 },
+    { url = "https://files.pythonhosted.org/packages/62/e0/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3082140 },
+    { url = "https://files.pythonhosted.org/packages/27/ce/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3264762 },
+    { url = "https://files.pythonhosted.org/packages/43/25/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3020967 },
+    { url = "https://files.pythonhosted.org/packages/5f/d6/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2872326 },
+    { url = "https://files.pythonhosted.org/packages/ce/ac/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2822712 },
+    { url = "https://files.pythonhosted.org/packages/c4/fc/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2920155 },
+    { url = "https://files.pythonhosted.org/packages/b2/d1/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2959356 },
+    { url = "https://files.pythonhosted.org/packages/08/50/[REDACTED_MATRIX_TOKEN]/psycopg2_binary-2.9.10-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2569224 },
+]
+
+[[package]]
+name = "pymongo"
+version = "4.12.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "dnspython" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f4/2c/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2161377 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bc/b2/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 854906 },
+    { url = "https://files.pythonhosted.org/packages/4b/53/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 855199 },
+    { url = "https://files.pythonhosted.org/packages/e9/87/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1424270 },
+    { url = "https://files.pythonhosted.org/packages/b4/fe/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1475214 },
+    { url = "https://files.pythonhosted.org/packages/fa/3b/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1449648 },
+    { url = "https://files.pythonhosted.org/packages/6f/d8/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1428767 },
+    { url = "https://files.pythonhosted.org/packages/53/b6/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1397417 },
+    { url = "https://files.pythonhosted.org/packages/51/d7/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 832103 },
+    { url = "https://files.pythonhosted.org/packages/27/b0/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 846049 },
+    { url = "https://files.pythonhosted.org/packages/4f/3c/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 909765 },
+    { url = "https://files.pythonhosted.org/packages/2a/ff/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 909464 },
+    { url = "https://files.pythonhosted.org/packages/97/ba/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1688107 },
+    { url = "https://files.pythonhosted.org/packages/4e/e1/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1752332 },
+    { url = "https://files.pythonhosted.org/packages/5a/22/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1721367 },
+    { url = "https://files.pythonhosted.org/packages/7f/ac/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1691332 },
+    { url = "https://files.pythonhosted.org/packages/48/da/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1650461 },
+    { url = "https://files.pythonhosted.org/packages/d9/94/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 878466 },
+    { url = "https://files.pythonhosted.org/packages/f0/12/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 896720 },
+    { url = "https://files.pythonhosted.org/packages/8d/fb/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 964026 },
+    { url = "https://files.pythonhosted.org/packages/41/2b/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 963703 },
+    { url = "https://files.pythonhosted.org/packages/29/20/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1952005 },
+    { url = "https://files.pythonhosted.org/packages/37/45/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2029425 },
+    { url = "https://files.pythonhosted.org/packages/5e/56/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1993102 },
+    { url = "https://files.pythonhosted.org/packages/2d/51/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1953906 },
+    { url = "https://files.pythonhosted.org/packages/56/51/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1903343 },
+    { url = "https://files.pythonhosted.org/packages/21/fb/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 924811 },
+    { url = "https://files.pythonhosted.org/packages/7a/01/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 947361 },
+    { url = "https://files.pythonhosted.org/packages/4d/bc/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1020533 },
+    { url = "https://files.pythonhosted.org/packages/df/a1/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1020527 },
+    { url = "https://files.pythonhosted.org/packages/01/51/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2280704 },
+    { url = "https://files.pythonhosted.org/packages/f4/68/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313t-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2367926 },
+    { url = "https://files.pythonhosted.org/packages/91/4d/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313t-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2326795 },
+    { url = "https://files.pythonhosted.org/packages/fe/e4/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2278089 },
+    { url = "https://files.pythonhosted.org/packages/f0/6e/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313t-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2217108 },
+    { url = "https://files.pythonhosted.org/packages/01/06/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313t-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 973698 },
+    { url = "https://files.pythonhosted.org/packages/67/3b/[REDACTED_MATRIX_TOKEN]/pymongo-4.12.0-cp313-cp313t-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1002291 },
+]
+
+[[package]]
+name = "repl-nix-workspace"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "discord-py" },
+    { name = "email-validator" },
+    { name = "flask" },
+    { name = "flask-login" },
+    { name = "flask-sqlalchemy" },
+    { name = "flask-wtf" },
+    { name = "gunicorn" },
+    { name = "psycopg2-binary" },
+    { name = "pymongo" },
+    { name = "requests" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "discord-py", specifier = ">=2.5.2" },
+    { name = "email-validator", specifier = ">=2.2.0" },
+    { name = "flask", specifier = ">=3.1.0" },
+    { name = "flask-login", specifier = ">=0.6.3" },
+    { name = "flask-sqlalchemy", specifier = ">=3.1.1" },
+    { name = "flask-wtf", specifier = ">=1.2.2" },
+    { name = "gunicorn", specifier = ">=23.0.0" },
+    { name = "psycopg2-binary", specifier = ">=2.9.10" },
+    { name = "pymongo", specifier = ">=4.12.0" },
+    { name = "requests", specifier = ">=2.32.3" },
+]
+
+[[package]]
+name = "requests"
+version = "2.32.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "certifi" },
+    { name = "charset-normalizer" },
+    { name = "idna" },
+    { name = "urllib3" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/63/70/[REDACTED_MATRIX_TOKEN]/requests-2.32.3.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 131218 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f9/9b/[REDACTED_MATRIX_TOKEN]/requests-2.32.3-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 64928 },
+]
+
+[[package]]
+name = "sqlalchemy"
+version = "2.0.40"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "greenlet", marker = "(python_full_version < '3.14' and platform_machine == 'AMD64') or (python_full_version < '3.14' and platform_machine == 'WIN32') or (python_full_version < '3.14' and platform_machine == 'aarch64') or (python_full_version < '3.14' and platform_machine == 'amd64') or (python_full_version < '3.14' and platform_machine == 'ppc64le') or (python_full_version < '3.14' and platform_machine == 'win32') or (python_full_version < '3.14' and platform_machine == 'x86_64')" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/68/c3/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 9664299 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/77/7e/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2114025 },
+    { url = "https://files.pythonhosted.org/packages/77/0f/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2104419 },
+    { url = "https://files.pythonhosted.org/packages/75/70/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3222720 },
+    { url = "https://files.pythonhosted.org/packages/12/cf/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3222682 },
+    { url = "https://files.pythonhosted.org/packages/15/3f/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3159542 },
+    { url = "https://files.pythonhosted.org/packages/85/7e/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3179864 },
+    { url = "https://files.pythonhosted.org/packages/e4/cc/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2084675 },
+    { url = "https://files.pythonhosted.org/packages/9a/48/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2110099 },
+    { url = "https://files.pythonhosted.org/packages/92/06/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2112620 },
+    { url = "https://files.pythonhosted.org/packages/01/72/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2103004 },
+    { url = "https://files.pythonhosted.org/packages/bf/fd/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3252440 },
+    { url = "https://files.pythonhosted.org/packages/cd/6a/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3263277 },
+    { url = "https://files.pythonhosted.org/packages/45/97/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3198591 },
+    { url = "https://files.pythonhosted.org/packages/e6/1c/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3225199 },
+    { url = "https://files.pythonhosted.org/packages/8f/91/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2082959 },
+    { url = "https://files.pythonhosted.org/packages/2a/9f/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2108526 },
+    { url = "https://files.pythonhosted.org/packages/8c/18/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2107887 },
+    { url = "https://files.pythonhosted.org/packages/cb/60/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2098367 },
+    { url = "https://files.pythonhosted.org/packages/4c/9f/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3184806 },
+    { url = "https://files.pythonhosted.org/packages/4b/7d/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3198131 },
+    { url = "https://files.pythonhosted.org/packages/6d/51/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3131364 },
+    { url = "https://files.pythonhosted.org/packages/7a/2f/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 3159482 },
+    { url = "https://files.pythonhosted.org/packages/33/ac/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp313-cp313-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2080704 },
+    { url = "https://files.pythonhosted.org/packages/1c/cb/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 2104564 },
+    { url = "https://files.pythonhosted.org/packages/d1/7c/[REDACTED_MATRIX_TOKEN]/sqlalchemy-2.0.40-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 1903894 },
+]
+
+[[package]]
+name = "typing-extensions"
+version = "4.13.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f6/37/[REDACTED_MATRIX_TOKEN]/typing_extensions-4.13.2.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 106967 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8b/54/[REDACTED_MATRIX_TOKEN]/typing_extensions-4.13.2-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 45806 },
+]
+
+[[package]]
+name = "urllib3"
+version = "2.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/78/[REDACTED_MATRIX_TOKEN]/urllib3-2.4.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 390672 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6b/11/[REDACTED_MATRIX_TOKEN]/urllib3-2.4.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 128680 },
+]
+
+[[package]]
+name = "werkzeug"
+version = "3.1.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markupsafe" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9f/69/[REDACTED_MATRIX_TOKEN]/werkzeug-3.1.3.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 806925 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/52/24/[REDACTED_MATRIX_TOKEN]/werkzeug-3.1.3-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 224498 },
+]
+
+[[package]]
+name = "wtforms"
+version = "3.2.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markupsafe" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/01/e4/[REDACTED_MATRIX_TOKEN]/wtforms-3.2.1.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 137801 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/08/c9/[REDACTED_MATRIX_TOKEN]/wtforms-3.2.1-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 152454 },
+]
+
+[[package]]
+name = "yarl"
+version = "1.20.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "idna" },
+    { name = "multidict" },
+    { name = "propcache" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/62/51/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0.tar.gz", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 185258 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/60/82/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 145178 },
+    { url = "https://files.pythonhosted.org/packages/ba/81/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 96859 },
+    { url = "https://files.pythonhosted.org/packages/ad/17/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 94647 },
+    { url = "https://files.pythonhosted.org/packages/2c/29/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 355788 },
+    { url = "https://files.pythonhosted.org/packages/26/6d/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 344613 },
+    { url = "https://files.pythonhosted.org/packages/d7/0e/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 370953 },
+    { url = "https://files.pythonhosted.org/packages/5f/9b/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 369204 },
+    { url = "https://files.pythonhosted.org/packages/9c/85/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 358108 },
+    { url = "https://files.pythonhosted.org/packages/6f/54/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 346610 },
+    { url = "https://files.pythonhosted.org/packages/a0/1a/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 365378 },
+    { url = "https://files.pythonhosted.org/packages/02/84/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 356919 },
+    { url = "https://files.pythonhosted.org/packages/04/76/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 364248 },
+    { url = "https://files.pythonhosted.org/packages/1b/b0/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 378418 },
+    { url = "https://files.pythonhosted.org/packages/c7/ce/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 383850 },
+    { url = "https://files.pythonhosted.org/packages/89/1e/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 381218 },
+    { url = "https://files.pythonhosted.org/packages/85/b0/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 86606 },
+    { url = "https://files.pythonhosted.org/packages/33/46/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp311-cp311-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 93374 },
+    { url = "https://files.pythonhosted.org/packages/c3/e8/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 147089 },
+    { url = "https://files.pythonhosted.org/packages/60/c3/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 97706 },
+    { url = "https://files.pythonhosted.org/packages/0c/5b/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 95719 },
+    { url = "https://files.pythonhosted.org/packages/2d/4e/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 343972 },
+    { url = "https://files.pythonhosted.org/packages/49/fd/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-manylinux_2_17_armv7l.manylinux2014_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 339639 },
+    { url = "https://files.pythonhosted.org/packages/48/2f/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 353745 },
+    { url = "https://files.pythonhosted.org/packages/26/17/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 354178 },
+    { url = "https://files.pythonhosted.org/packages/15/45/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 349219 },
+    { url = "https://files.pythonhosted.org/packages/e6/e0/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 337266 },
+    { url = "https://files.pythonhosted.org/packages/33/a6/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 360873 },
+    { url = "https://files.pythonhosted.org/packages/77/67/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 360524 },
+    { url = "https://files.pythonhosted.org/packages/bd/e8/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 365370 },
+    { url = "https://files.pythonhosted.org/packages/c9/99/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 373297 },
+    { url = "https://files.pythonhosted.org/packages/3d/89/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 378771 },
+    { url = "https://files.pythonhosted.org/packages/3a/58/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 375000 },
+    { url = "https://files.pythonhosted.org/packages/3b/2a/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 86355 },
+    { url = "https://files.pythonhosted.org/packages/ca/c6/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp312-cp312-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 92904 },
+    { url = "https://files.pythonhosted.org/packages/0f/6f/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 145030 },
+    { url = "https://files.pythonhosted.org/packages/4e/9d/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 96894 },
+    { url = "https://files.pythonhosted.org/packages/cd/57/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 94457 },
+    { url = "https://files.pythonhosted.org/packages/e9/ee/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 343070 },
+    { url = "https://files.pythonhosted.org/packages/4a/12/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-manylinux_2_17_armv7l.manylinux2014_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 337739 },
+    { url = "https://files.pythonhosted.org/packages/7d/6b/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 351338 },
+    { url = "https://files.pythonhosted.org/packages/45/cb/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 353636 },
+    { url = "https://files.pythonhosted.org/packages/98/9d/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 348061 },
+    { url = "https://files.pythonhosted.org/packages/72/6b/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 334150 },
+    { url = "https://files.pythonhosted.org/packages/ef/b2/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 362207 },
+    { url = "https://files.pythonhosted.org/packages/14/7c/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 361277 },
+    { url = "https://files.pythonhosted.org/packages/81/83/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 364990 },
+    { url = "https://files.pythonhosted.org/packages/b4/de/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 374684 },
+    { url = "https://files.pythonhosted.org/packages/62/0b/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 382599 },
+    { url = "https://files.pythonhosted.org/packages/74/a9/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 378573 },
+    { url = "https://files.pythonhosted.org/packages/fd/be/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 86051 },
+    { url = "https://files.pythonhosted.org/packages/52/56/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 92742 },
+    { url = "https://files.pythonhosted.org/packages/d4/2f/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-macosx_10_13_universal2.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 163575 },
+    { url = "https://files.pythonhosted.org/packages/90/fc/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 106121 },
+    { url = "https://files.pythonhosted.org/packages/6d/00/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 103815 },
+    { url = "https://files.pythonhosted.org/packages/28/f4/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 408231 },
+    { url = "https://files.pythonhosted.org/packages/0f/a1/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-manylinux_2_17_armv7l.manylinux2014_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 390221 },
+    { url = "https://files.pythonhosted.org/packages/41/15/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 411400 },
+    { url = "https://files.pythonhosted.org/packages/5c/af/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 411714 },
+    { url = "https://files.pythonhosted.org/packages/83/70/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 404279 },
+    { url = "https://files.pythonhosted.org/packages/19/f5/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 384044 },
+    { url = "https://files.pythonhosted.org/packages/6a/36/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 416236 },
+    { url = "https://files.pythonhosted.org/packages/cb/3a/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-musllinux_1_2_armv7l.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 402034 },
+    { url = "https://files.pythonhosted.org/packages/10/97/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-musllinux_1_2_i686.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 407943 },
+    { url = "https://files.pythonhosted.org/packages/fd/a4/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-musllinux_1_2_ppc64le.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 423058 },
+    { url = "https://files.pythonhosted.org/packages/4c/f6/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-musllinux_1_2_s390x.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 423792 },
+    { url = "https://files.pythonhosted.org/packages/9e/35/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 422242 },
+    { url = "https://files.pythonhosted.org/packages/ed/f7/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-win32.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 93816 },
+    { url = "https://files.pythonhosted.org/packages/3f/93/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-cp313-cp313t-win_amd64.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 101093 },
+    { url = "https://files.pythonhosted.org/packages/ea/1f/[REDACTED_MATRIX_TOKEN]/yarl-1.20.0-py3-none-any.whl", hash = "sha256:[REDACTED_MATRIX_TOKEN]", size = 46124 },
+]
